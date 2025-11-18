@@ -1,0 +1,195 @@
+✅ Flask
+✅ Python
+✅ SQLite / SQLiteCloud
+✅ Tailwind CSS
+✅ Layout responsivo moderno e bonito
+✅ Integração com IA Gemini para respostas inteligentes dentro do chat
+✅ Fluxo de captura de leads (nome + número)
+✅ Redirecionamento baseado em ?tag=
+✅ Sistema modular e profissional
+✅ Estrutura de pastas organizada
+✅ Código limpo, com comentários
+✅ Pronto para rodar no Replit
+
+🎯 PROMPT COMPLETO PARA COLAR NO REPLIT
+
+Basta copiar e colar exatamente como está no Replit.
+
+✅ PROMPT:
+
+Quero que você gere um sistema profissional completo em Python + Flask com SQLite / SQLiteCloud, front-end em HTML5 + Tailwind CSS, totalmente responsivo, moderno, bonito e com foco mobile.
+O sistema será da empresa Digital Soluctions.
+
+🎯 OBJETIVO DO SISTEMA
+
+Criar um Chat Automatizado Inteligente com:
+
+Captura de nome e telefone
+
+Identificação automática de nicho via parâmetro GET ?tag=
+
+Salvamento em SQLite (SEM SQLAlchemy, apenas sqlite3 puro)
+
+IA usando Gemini API (chave por variável de ambiente)
+
+Interface moderna estilo app mobile, responsiva e elegante
+
+Redirecionamento do usuário para um link baseado na tag
+
+Layout com cores institucionais e estilo premium
+
+Arquitetura organizada e modular
+
+📁 ESTRUTURA DO PROJETO (GERAR EXATAMENTE ASSIM)
+/static/
+    /css/
+        style.css
+    /js/
+        chat.js
+
+/templates/
+    base.html
+    chat.html
+    thankyou.html
+
+app.py
+db_init.py
+requirements.txt
+README.md
+
+💾 BANCO DE DADOS
+
+Criar arquivo leads.db automaticamente com tabela:
+
+id (PK)
+name TEXT
+phone TEXT
+tag TEXT
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+🤖 INTEGRAÇÃO COM IA GEMINI
+
+Criar função:
+
+def ask_gemini(message: str) -> str:
+
+
+– Enviar mensagem do usuário para o modelo
+– Responder no chat em tempo real
+– Chave da API: variável GEMINI_API_KEY
+
+🧠 FUNCIONALIDADE DO CHAT
+
+O chat deve:
+
+Identificar a tag na URL
+
+Exibir a mensagem personalizada:
+
+“Olá! Eu sou o assistente da Digital Soluctions. Qual é seu nome?”
+
+Após nome → perguntar telefone
+
+Após telefone → salvar no banco
+
+Iniciar chat com IA Gemini
+
+Oferecer link personalizado do nicho após a captura
+
+Registrar no banco o nicho e URL de origem
+
+🎨 LAYOUT (TAILWIND + DESIGN PREMIUM)
+
+Criar interface semelhante a:
+
+WhatsApp chat
+
+Cores: azul (#2563eb), branco, cinza
+
+Fontes suaves
+
+Botões arredondados
+
+Bolhas de mensagem
+
+Efeitos de transição suaves
+
+Layout fluido para celulares
+
+📱 RESPONSIVIDADE
+
+Obrigatório:
+
+Mobile-first
+
+Chat ocupando toda a tela
+
+Botão de enviar fixo
+
+Header com logo “Digital Soluctions”
+
+🚀 PÁGINAS A GERAR
+1) base.html
+
+Template mestre com Tailwind CDN + header elegante.
+
+2) chat.html
+
+Tela inicial com captura de nome → telefone → início do chat IA.
+
+3) thankyou.html
+
+Página simples com link do nicho detectado.
+
+⚙ BACK-END
+
+Flask modular
+
+Blueprints (chat, database)
+
+Tratamento de erros
+
+Rotas:
+
+/                → inicia chat, lê tag
+/start           → recebe nome e telefone
+/chat_ai         → recebe pergunta e responde com Gemini
+/redirect        → envia para site personalizado
+
+✨ JAVASCRIPT (chat.js)
+
+Criar:
+
+envio AJAX
+
+animação de mensagens
+
+scroll automático
+
+interface estilo app mobile
+
+📌 REQUISITOS
+
+Criar arquivo requirements.txt contendo:
+
+Flask
+google-generativeai
+python-dotenv
+
+📝 README.md
+
+Explicar:
+
+Como rodar o projeto no Replit
+
+Como configurar GEMINI_API_KEY
+
+Como adicionar novas tags de nichos
+
+📣 IMPORTANTE
+
+Todo o código deve ser totalmente funcional, organizado, limpo e pronto para rodar imediatamente no Replit.
+
+👉 Gere agora TODO O PROJETO conforme instruído acima.
+
+Inclua todos os arquivos, pastas, templates e códigos completos.

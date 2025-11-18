@@ -1,0 +1,39 @@
+~/workspace$ git checkout --orphan novo-main && git add -A && git commit -m "Sistema completo de gestão para barbearia - Barbearia Premium" && git branch -D main && git branch -m main && git push -f origin main
+Switched to a new branch 'novo-main'
+[novo-main (root-commit) 2d6becc] Sistema completo de gestão para barbearia - Barbearia Premium
+ 29 files changed, 3738 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .replit
+ create mode 100644 README.md
+ create mode 100644 api_keys.py
+ create mode 100644 app.py
+ create mode 100644 attached_assets/Design_sem_nome__1_-removebg-preview_1763409606345.png
+ create mode 100644 attached_assets/Pasted--Flask-Python-SQLite-SQLiteCloud-Tailwind-CSS-Layout-responsivo-moderno-e-bonito-Integr-1763403154007_1763403154010.txt
+ create mode 100644 attached_assets/image_1763406046840.png
+ create mode 100644 attached_assets/image_1763406367590.png
+ create mode 100644 attached_assets/image_1763407271989.png
+ create mode 100644 attached_assets/image_1763409982998.png
+ create mode 100644 attached_assets/image_1763411138144.png
+ create mode 100644 attached_assets/image_1763418857812.png
+ create mode 100644 attached_assets/image_1763419535650.png
+ create mode 100644 db_init.py
+ create mode 100644 design_guidelines.md
+ create mode 100644 gemini.py
+ create mode 100644 main.py
+ create mode 100644 nicho_messages.md
+ create mode 100644 pyproject.toml
+ create mode 100644 replit.md
+ create mode 100644 requirements.txt
+ create mode 100644 static/css/style.css
+ create mode 100644 static/img/logo.png
+ create mode 100644 static/js/chat.js
+ create mode 100644 templates/base.html
+ create mode 100644 templates/chat.html
+ create mode 100644 templates/thankyou.html
+ create mode 100644 uv.lock
+Deleted branch main (was 7cdca40).
+error: unable to read askpass response from 'replit-git-askpass'
+Password for 'https://GITHUB_TOKEN@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/DuJao22/ChatAutomatico_DigitalSoluctions.git/'
+~/workspace$ 
